@@ -1,0 +1,44 @@
+# VocalFocus - runtime dependencies
+# Recommended Python: 3.12.x  (SpeechBrain supports up to Python 3.12) 
+# NOTE (PyAudio): may require PortAudio system dependency on macOS/Linux.
+# NOTE (Torch/TorchAudio): must be installed with matching versions.
+
+# ---------------------------
+# UI (PyQt6)
+# ---------------------------
+PyQt6==6.10.1
+
+# ---------------------------
+# Audio capture (mic I/O)
+# ---------------------------
+PyAudio==0.2.14
+
+# ---------------------------
+# DSP / preprocessing
+# ---------------------------
+numpy>=1.26,<3
+scipy>=1.10,<2
+librosa==0.11.0
+soundfile>=0.12.1
+audioread>=3.0.1
+
+# ---------------------------
+# ML models (separation + speaker recognition)
+# Keep Torch + TorchAudio versions matched.
+# ---------------------------
+torch==2.9.1
+torchaudio==2.9.1
+speechbrain==1.0.3
+huggingface-hub>=0.23
+
+
+# ---------------------------
+
+# Sources (links)
+# - PyQt6 (PyPI): https://pypi.org/project/PyQt6/
+# - PyAudio (PyPI): https://pypi.org/project/PyAudio/
+# - PyAudio (official): https://people.csail.mit.edu/hubert/pyaudio/
+# - TorchAudio install/compatibility note: https://docs.pytorch.org/audio/stable/installation.html
+# - PyTorch official install pages: https://pytorch.org/get-started/locally/  |  https://pytorch.org/get-started/previous-versions/
+# - SpeechBrain (install + supported Python): https://speechbrain.readthedocs.io/en/latest/installation.html
+# - SpeechBrain (PyPI): https://pypi.org/project/speechbrain/
